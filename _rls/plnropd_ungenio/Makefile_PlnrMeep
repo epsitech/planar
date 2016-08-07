@@ -1,0 +1,38 @@
+# file Makefile
+# make file for operation pack PlnrMeep, release plnropd_ungenio
+# author Alexander Wirthmueller
+# date created: 4 Dec 2015
+# modified: 4 Dec 2015
+
+SRCROOT = /Users/epsi/src
+LIBROOT = /Users/epsi/lib
+
+CC = g++
+CPPFLAGS = -std=c++11 -g -Wall -Os -pthread -DPLNROPD
+
+INCS = -I/opt/local/include/libxml2 -I/usr/local/mysql/include -I/opt/local/include/postgresql84 -I/opt/local/include -I/usr/include
+INCS += -I$(SRCROOT)
+INCS += -I$(SRCROOT)/dbsplnr
+INCS += -I$(SRCROOT)/plnropd -I$(SRCROOT)/plnropd/VecPlnr
+
+OBJECTS = PlnrMeep_blks.o PlnrMeep.o
+OBJECTS += PlnrMeepTrf2d.o PlnrMeepTrf3d.o
+
+LIBRARY = libplnrmeep
+
+.SUFFIXES:	.cpp
+
+.cpp.o :
+	$(CC) $(CPPFLAGS) $(INCS) -o $@ -c $<
+
+all:	$(LIBRARY)
+
+$(LIBRARY):	$(OBJECTS)
+	ar rcs $(LIBRARY).a $(OBJECTS)
+
+install:
+	cp $(LIBRARY).a $(LIBROOT)/plnropd/
+
+clean:
+	rm -f *.o
+

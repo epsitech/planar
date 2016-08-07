@@ -1,0 +1,34 @@
+# file Makefile
+# make file for Plnr system vectors, release plnrd_ungenio
+# author Alexander Wirthmueller
+# date created: 4 Dec 2015
+# modified: 4 Dec 2015
+
+SRCROOT = /Users/epsi/src
+LIBROOT = /Users/epsi/lib
+
+CC = g++
+CPPFLAGS = -std=c++11 -g -Wall -Os -pthread
+
+INCS = -I/opt/local/include/libxml2
+INCS += -I$(SRCROOT)
+OBJECTS = VecPlnrVCall.o VecPlnrVDpch.o VecPlnrVExpstate.o VecPlnrVIop.o VecPlnrVJob.o VecPlnrVMimetype.o VecPlnrVQrystate.o VecPlnrVReqitmode.o VecPlnrVStub.o VecPlnrVTag.o
+
+LIBRARY = libvecplnr
+
+.SUFFIXES: .cpp
+
+.cpp.o :
+	$(CC) $(CPPFLAGS) $(INCS) -o $@ -c $<
+
+all:	$(LIBRARY)
+
+$(LIBRARY):	$(OBJECTS)
+	ar rcs $(LIBRARY).a $(OBJECTS)
+
+install:
+	cp $(LIBRARY).a $(LIBROOT)/
+
+clean:
+	rm -f *.o
+

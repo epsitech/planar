@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN" "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<head>
+		<title>Detail_bcont</title>
+		<script>
+			function handlePupTypChange() {parent.parent.window.handlePupChange(document,"PupTyp","");};
+			function handlePupHktChange() {parent.parent.window.handlePupChange(document,"PupHkt","xs");};
+			function handleButHkuViewClick() {parent.parent.window.handleButCrdopenClick("ButHkuView");};
+			function handleButMatViewClick() {parent.parent.window.handleButCrdopenClick("ButMatView");};
+			function handlePupTtyChange() {parent.parent.window.handlePupChange(document,"PupTty","");};
+			function handleTxfTKey(evt) {return parent.parent.window.handleTxfKey(document,"TxfT","s",evt);};
+			function handleTxfTChange() {parent.parent.window.handleTxfChange(document,"TxfT","s");};
+			function handleTxfMlKey(evt) {return parent.parent.window.handleTxfKey(document,"TxfMl","s",evt);};
+			function handleTxfMlChange() {parent.parent.window.handleTxfChange(document,"TxfMl","s");};
+<!-- IP custScript - INSERT -->
+		</script>
+		<link href="../style/pnlDetail.css" rel="styleSheet" type="text/css"/>
+<!-- IP custStyle - INSERT -->
+	</head>
+	<body marginwidth="0" marginheight="0">
+		<table cellspacing="0" border="0" cellpadding="0"><form action="">
+			<colgroup>
+				<col width="5"/>
+				<col width="155"/>
+				<col width="5"/>
+				<col width="78"/>
+				<col width="2"/>
+				<col width="38"/>
+				<col width="2"/>
+				<col width="78"/>
+				<col width="2"/>
+				<col width="1"/>
+				<col width="74"/>
+			</colgroup>
+			<tbody id="tbl">
+				<tr><td colspan="11" height="5"></td></tr>
+				<tr id="trSrf" class="show">
+					<td height="25"></td>
+					<td align="right">
+						<span id="CptSrf" class="cpt">CptSrf</span>
+					</td>
+					<td></td>
+					<td colspan="3" align="left">
+						<input id="TxtSrf" class="txfsnoed" type="text" readonly="readonly" value="TxtSrf"/>
+					</td>
+					<td></td>
+					<td colspan="4"></td>
+				</tr>
+				<tr id="trA1"><td colspan="11" height="3"></td></tr>
+				<tr id="trA2">
+					<td height="1"></td>
+					<td colspan="10" bgcolor="#7f7f7f"></td>
+				</tr>
+				<tr id="trA3"><td colspan="11" height="3"></td></tr>
+				<tr id="trTyp" class="show">
+					<td height="25"></td>
+					<td align="right">
+						<span id="CptTyp" class="cpt">CptTyp</span>
+					</td>
+					<td></td>
+					<td colspan="5" align="left">
+						<select id="PupTyp" class="pup" size="1" onchange="handlePupTypChange()"/>
+					</td>
+					<td></td>
+					<td colspan="2"></td>
+				</tr>
+				<tr id="trHku" class="show">
+					<td height="25"></td>
+					<td align="right">
+						<span id="CptHku" class="cpt">CptHku</span>
+					</td>
+					<td></td>
+					<td colspan="2" align="left">
+						<select id="PupHkt" class="pupxs" size="1" onchange="handlePupHktChange()"/>
+					</td>
+					<td colspan="3" align="left">
+						<input id="TxtHku" class="txfsnoed" type="text" readonly="readonly" value="TxtHku"/>
+					</td>
+					<td></td>
+					<td colspan="2" align="left">
+						<img id="ButHkuView" class="but" src="../icon/view.png" width="16" height="16" alt="ButHkuView" onmouseover="src='../icon/view_hlt.png'" onmouseout="src='../icon/view.png'" onclick="handleButHkuViewClick()"/>
+					</td>
+				</tr>
+				<tr id="trMat" class="show">
+					<td height="25"></td>
+					<td align="right">
+						<span id="CptMat" class="cpt">CptMat</span>
+					</td>
+					<td></td>
+					<td colspan="5" align="left">
+						<input id="TxtMat" class="txfnoed" type="text" readonly="readonly" value="TxtMat"/>
+					</td>
+					<td></td>
+					<td id="rdynMat" colspan="2" align="left">
+					</td>
+				</tr>
+				<tr id="trTty" class="show">
+					<td height="25"></td>
+					<td align="right">
+						<span id="CptTty" class="cpt">CptTty</span>
+					</td>
+					<td></td>
+					<td colspan="5" align="left">
+						<select id="PupTty" class="pup" size="1" onchange="handlePupTtyChange()"/>
+					</td>
+					<td></td>
+					<td colspan="2"></td>
+				</tr>
+				<tr id="trFlr" class="show">
+					<td height="25"></td>
+					<td align="right">
+						<span id="CptFlr" class="cpt">CptFlr</span>
+					</td>
+					<td></td>
+					<td colspan="5" align="left">
+						<input id="TxtFlr" class="txfnoed" type="text" readonly="readonly" value="TxtFlr"/>
+					</td>
+					<td></td>
+					<td colspan="2"></td>
+				</tr>
+				<tr id="trCtr" class="show">
+					<td height="25"></td>
+					<td align="right">
+						<span id="CptCtr" class="cpt">CptCtr</span>
+					</td>
+					<td></td>
+					<td colspan="5" align="left">
+						<input id="TxtCtr" class="txfnoed" type="text" readonly="readonly" value="TxtCtr"/>
+					</td>
+					<td></td>
+					<td colspan="2"></td>
+				</tr>
+				<tr id="trCei" class="show">
+					<td height="25"></td>
+					<td align="right">
+						<span id="CptCei" class="cpt">CptCei</span>
+					</td>
+					<td></td>
+					<td colspan="5" align="left">
+						<input id="TxtCei" class="txfnoed" type="text" readonly="readonly" value="TxtCei"/>
+					</td>
+					<td></td>
+					<td colspan="2"></td>
+				</tr>
+				<tr id="trT" class="show">
+					<td height="25"></td>
+					<td align="right">
+						<span id="CptT" class="cpt">CptT</span>
+					</td>
+					<td></td>
+					<td colspan="3" align="left">
+						<input id="TxfT" class="txfs" type="text" value="TxfT" onchange="handleTxfTChange()" onkeypress="return handleTxfTKey(event)"/>
+					</td>
+					<td></td>
+					<td colspan="4"></td>
+				</tr>
+				<tr id="trMl" class="show">
+					<td height="25"></td>
+					<td align="right">
+						<span id="CptMl" class="cpt">CptMl</span>
+					</td>
+					<td></td>
+					<td colspan="3" align="left">
+						<input id="TxfMl" class="txfs" type="text" value="TxfMl" onchange="handleTxfMlChange()" onkeypress="return handleTxfMlKey(event)"/>
+					</td>
+					<td></td>
+					<td colspan="4"></td>
+				</tr>
+				<tr><td colspan="11" height="4"></td></tr>
+			</tbody>
+		</form></table>
+	</body>
+</html>
+
+

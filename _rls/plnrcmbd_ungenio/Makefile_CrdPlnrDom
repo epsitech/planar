@@ -1,0 +1,37 @@
+# file Makefile
+# make file for CrdPlnrDom card job handler, release plnrcmbd_ungenio
+# author Alexander Wirthmueller
+# date created: 4 Dec 2015
+# modified: 4 Dec 2015
+
+SRCROOT = /Users/epsi/src
+LIBROOT = /Users/epsi/lib
+
+CC = g++
+CPPFLAGS = -std=c++11 -g -Wall -Os -pthread -DPLNRCMBD
+
+INCS = -I/opt/local/include/libxml2 -I/usr/local/mysql/include -I/opt/local/include/postgresql84 -I/opt/local/include -I/usr/include
+INCS += -I$(SRCROOT)
+INCS += -I$(SRCROOT)/dbsplnr
+INCS += -I$(SRCROOT)/plnrcmbd -I$(SRCROOT)/plnrcmbd/IexPlnr -I$(SRCROOT)/plnrcmbd/VecPlnr
+
+OBJECTS += CrdPlnrDom.o PnlPlnrDomRec.o PnlPlnrDomDetail.o PnlPlnrDomMNCalc.o QryPlnrDomMNCalc.o PnlPlnrDomHeadbar.o PnlPlnrDomList.o QryPlnrDomList.o
+
+LIBRARY = libcrdplnrdom
+
+.SUFFIXES: .cpp
+
+.cpp.o :
+	$(CC) $(CPPFLAGS) $(INCS) -o $@ -c $<
+
+all:	$(LIBRARY)
+
+$(LIBRARY):	$(OBJECTS)
+	ar rcs $(LIBRARY).a $(OBJECTS)
+
+install:
+	cp $(LIBRARY).a $(LIBROOT)/plnrcmbd/
+
+clean:
+	rm -f *.o
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PrefPlnropd>
+	<StgPlnrDatabase>
+		<Si sref="srefIxDbsVDbstype"/>
+		<Si sref="dbspath"></Si>
+		<Si sref="dbsname"></Si>
+		<Si sref="username">epsi</Si>
+		<Si sref="password">f9w8feeh</Si>
+		<Si sref="ip"></Si>
+		<Si sref="port"></Si>
+	</StgPlnrDatabase>
+	<StgPlnropd>
+		<Si sref="engcliip"></Si>
+		<Si sref="engcliport"></Si>
+		<Si sref="engsrvport"></Si>
+		<Si sref="opprcn">1</Si>
+	</StgPlnropd>
+	<StgPlnrPath>
+		<Si sref="acvpath"></Si>
+		<Si sref="tmppath"></Si>
+		<Si sref="webpath"></Si>
+		<Si sref="helpurl"></Si>
+	</StgPlnrPath>
+</PrefPlnropd>
+

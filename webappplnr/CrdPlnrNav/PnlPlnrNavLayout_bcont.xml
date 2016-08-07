@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN" "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<head>
+		<title>Layout_bcont</title>
+		<script>
+			function handleButTpoExpandClick() {parent.parent.window.handleButExpandClick("LstTpo");};
+			function handleButTpoCollapseClick() {parent.parent.window.handleButCollapseClick("LstTpo");};
+			function handleButTpoViewClick() {parent.parent.window.handleButCrdopenClick("ButTpoView");};
+			function handleButTpoNewcrdClick() {parent.parent.window.handleButCrdopenClick("ButTpoNewcrd");};
+			function handleButArrExpandClick() {parent.parent.window.handleButExpandClick("LstArr");};
+			function handleButArrCollapseClick() {parent.parent.window.handleButCollapseClick("LstArr");};
+			function handleButArrViewClick() {parent.parent.window.handleButCrdopenClick("ButArrView");};
+			function handleButAriExpandClick() {parent.parent.window.handleButExpandClick("LstAri");};
+			function handleButAriCollapseClick() {parent.parent.window.handleButCollapseClick("LstAri");};
+			function handleButAriViewClick() {parent.parent.window.handleButCrdopenClick("ButAriView");};
+			function handleButRtcExpandClick() {parent.parent.window.handleButExpandClick("LstRtc");};
+			function handleButRtcCollapseClick() {parent.parent.window.handleButCollapseClick("LstRtc");};
+			function handleButRtcViewClick() {parent.parent.window.handleButCrdopenClick("ButRtcView");};
+<!-- IP custScript - INSERT -->
+		</script>
+		<link href="../style/pnlDetail3_2.css" rel="styleSheet" type="text/css"/>
+<!-- IP custStyle - INSERT -->
+	</head>
+	<body marginwidth="0" marginheight="0">
+		<table cellspacing="0" border="0" cellpadding="0"><form action="">
+			<colgroup>
+				<col width="5"/>
+				<col width="215"/>
+				<col width="5"/>
+				<col width="138"/>
+				<col width="2"/>
+				<col width="68"/>
+				<col width="2"/>
+				<col width="138"/>
+				<col width="2"/>
+				<col width="1"/>
+				<col width="114"/>
+			</colgroup>
+			<tbody id="tbl">
+				<tr><td colspan="11" height="5"></td></tr>
+				<tr id="trTpo" class="show">
+					<td height="25"></td>
+					<td id="ldynTpo" align="right">
+					</td>
+					<td></td>
+					<td id="dynTpo" rowspan="1" colspan="5">
+					</td>
+					<td></td>
+					<td id="rdynTpo" colspan="2" align="left">
+					</td>
+				</tr>
+				<tr id="trTpo2" class="hide">
+					<td colspan="3" height="67"></td>
+					<td colspan="3"></td>
+				</tr>
+				<tr id="trArr" class="show">
+					<td height="25"></td>
+					<td id="ldynArr" align="right">
+					</td>
+					<td></td>
+					<td id="dynArr" rowspan="1" colspan="5">
+					</td>
+					<td></td>
+					<td id="rdynArr" colspan="2" align="left">
+					</td>
+				</tr>
+				<tr id="trArr2" class="hide">
+					<td colspan="3" height="67"></td>
+					<td colspan="3"></td>
+				</tr>
+				<tr id="trAri" class="show">
+					<td height="25"></td>
+					<td id="ldynAri" align="right">
+					</td>
+					<td></td>
+					<td id="dynAri" rowspan="1" colspan="5">
+					</td>
+					<td></td>
+					<td id="rdynAri" colspan="2" align="left">
+					</td>
+				</tr>
+				<tr id="trAri2" class="hide">
+					<td colspan="3" height="67"></td>
+					<td colspan="3"></td>
+				</tr>
+				<tr id="trRtc" class="show">
+					<td height="25"></td>
+					<td id="ldynRtc" align="right">
+					</td>
+					<td></td>
+					<td id="dynRtc" rowspan="1" colspan="5">
+					</td>
+					<td></td>
+					<td id="rdynRtc" colspan="2" align="left">
+					</td>
+				</tr>
+				<tr id="trRtc2" class="hide">
+					<td colspan="3" height="67"></td>
+					<td colspan="3"></td>
+				</tr>
+				<tr><td colspan="11" height="4"></td></tr>
+			</tbody>
+		</form></table>
+	</body>
+</html>
+
+

@@ -1,0 +1,37 @@
+# file Makefile
+# make file for CrdPlnrTpo card job handler, release plnrd_genio
+# author Alexander Wirthmueller
+# date created: 4 Dec 2015
+# modified: 4 Dec 2015
+
+SRCROOT = /home/epsi/src
+LIBROOT = /home/epsi/lib
+
+CC = g++
+CPPFLAGS = -std=c++11 -g -Wall -Os -pthread -DPLNRD
+
+INCS = -I/usr/include/libxml2 -I/usr/include/mysql -I/usr/include/postgresql -I/usr/local/include -I/usr/include
+INCS += -I$(SRCROOT)
+INCS += -I$(SRCROOT)/dbsplnr
+INCS += -I$(SRCROOT)/plnrd -I$(SRCROOT)/plnrd/IexPlnr -I$(SRCROOT)/plnrd/VecPlnr
+
+OBJECTS += CrdPlnrTpo.o DlgPlnrTpoUsecase.o JobPlnrTpoExamples.o JobPlnrTpoIcabatch1.o JobPlnrTpoIcabatch2.o JobPlnrTpoIcabatch3.o JobPlnrTpoUvslides.o PnlPlnrTpoRec.o PnlPlnrTpoDetail.o PnlPlnrTpoFloorplan.o PnlPlnrTpo1NArray.o QryPlnrTpo1NArray.o PnlPlnrTpoHk1NReticle.o QryPlnrTpoHk1NReticle.o PnlPlnrTpoMNProject.o QryPlnrTpoMNProject.o PnlPlnrTpoHeadbar.o PnlPlnrTpoList.o QryPlnrTpoList.o
+
+LIBRARY = libcrdplnrtpo
+
+.SUFFIXES: .cpp
+
+.cpp.o :
+	$(CC) $(CPPFLAGS) $(INCS) -o $@ -c $<
+
+all:	$(LIBRARY)
+
+$(LIBRARY):	$(OBJECTS)
+	ar rcs $(LIBRARY).a $(OBJECTS)
+
+install:
+	cp $(LIBRARY).a $(LIBROOT)/plnrd/
+
+clean:
+	rm -f *.o
+

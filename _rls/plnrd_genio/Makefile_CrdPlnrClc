@@ -1,0 +1,37 @@
+# file Makefile
+# make file for CrdPlnrClc card job handler, release plnrd_genio
+# author Alexander Wirthmueller
+# date created: 4 Dec 2015
+# modified: 4 Dec 2015
+
+SRCROOT = /home/epsi/src
+LIBROOT = /home/epsi/lib
+
+CC = g++
+CPPFLAGS = -std=c++11 -g -Wall -Os -pthread -DPLNRD
+
+INCS = -I/usr/include/libxml2 -I/usr/include/mysql -I/usr/include/postgresql -I/usr/local/include -I/usr/include
+INCS += -I$(SRCROOT)
+INCS += -I$(SRCROOT)/dbsplnr
+INCS += -I$(SRCROOT)/plnrd -I$(SRCROOT)/plnrd/IexPlnr -I$(SRCROOT)/plnrd/VecPlnr
+
+OBJECTS += CrdPlnrClc.o DlgPlnrClcExprtx.o DlgPlnrClcGenrpv.o DlgPlnrClcUsecase.o JobPlnrClcDisptest.o JobPlnrClcQcdslab.o PnlPlnrClcRec.o PnlPlnrClcPre.o PnlPlnrClcDetail.o PnlPlnrClcView.o PnlPlnrClcAEnv.o QryPlnrClcAEnv.o PnlPlnrClcAPar.o QryPlnrClcAPar.o PnlPlnrClcCal1NCalcitem.o QryPlnrClcCal1NCalcitem.o PnlPlnrClc1NMaterial.o QryPlnrClc1NMaterial.o PnlPlnrClcSup1NCalc.o QryPlnrClcSup1NCalc.o PnlPlnrClcRef1NFile.o QryPlnrClcRef1NFile.o PnlPlnrClcMNFile.o QryPlnrClcMNFile.o PnlPlnrClcMNDomain.o QryPlnrClcMNDomain.o PnlPlnrClcHeadbar.o PnlPlnrClcList.o QryPlnrClcList.o
+
+LIBRARY = libcrdplnrclc
+
+.SUFFIXES: .cpp
+
+.cpp.o :
+	$(CC) $(CPPFLAGS) $(INCS) -o $@ -c $<
+
+all:	$(LIBRARY)
+
+$(LIBRARY):	$(OBJECTS)
+	ar rcs $(LIBRARY).a $(OBJECTS)
+
+install:
+	cp $(LIBRARY).a $(LIBROOT)/plnrd/
+
+clean:
+	rm -f *.o
+

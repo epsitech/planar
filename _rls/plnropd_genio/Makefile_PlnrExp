@@ -1,0 +1,38 @@
+# file Makefile
+# make file for operation pack PlnrExp, release plnropd_genio
+# author Alexander Wirthmueller
+# date created: 4 Dec 2015
+# modified: 4 Dec 2015
+
+SRCROOT = /home/epsi/src
+LIBROOT = /home/epsi/lib
+
+CC = g++
+CPPFLAGS = -std=c++11 -g -Wall -Os -pthread -DPLNROPD
+
+INCS = -I/usr/include/libxml2 -I/usr/include/mysql -I/usr/include/postgresql -I/usr/local/include -I/usr/include
+INCS += -I$(SRCROOT)
+INCS += -I$(SRCROOT)/dbsplnr
+INCS += -I$(SRCROOT)/plnropd -I$(SRCROOT)/plnropd/VecPlnr
+
+OBJECTS = PlnrExp_blks.o PlnrExp.o
+OBJECTS += PlnrExpColldev.o PlnrExpColldsn.o PlnrExpCollstk.o PlnrExpCorner.o PlnrExpCross.o PlnrExpDircoup.o PlnrExpDiscres.o PlnrExpDottext.o PlnrExpDsn.o PlnrExpGratcpl.o PlnrExpGray.o PlnrExpImage.o PlnrExpMarker.o PlnrExpPad.o PlnrExpPhcsq.o PlnrExpPhcsqneg.o PlnrExpPhctrig.o PlnrExpPhctrigneg.o PlnrExpPhotdet.o PlnrExpPie.o PlnrExpPinout.o PlnrExpRoicadp.o PlnrExpRtresneg.o PlnrExpSpring.o PlnrExpStkpertpl.o PlnrExpStkregfill.o PlnrExpVanderpauw.o PlnrExpWg.o PlnrExpWgbend.o PlnrExpWgbendneg.o PlnrExpWgneg.o PlnrExpWgsusp.o PlnrExpWgtap.o PlnrExpWgtapneg.o
+
+LIBRARY = libplnrexp
+
+.SUFFIXES:	.cpp
+
+.cpp.o :
+	$(CC) $(CPPFLAGS) $(INCS) -o $@ -c $<
+
+all:	$(LIBRARY)
+
+$(LIBRARY):	$(OBJECTS)
+	ar rcs $(LIBRARY).a $(OBJECTS)
+
+install:
+	cp $(LIBRARY).a $(LIBROOT)/plnropd/
+
+clean:
+	rm -f *.o
+

@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<IexPlnrIni>
+	<ImeIAVKeylistKey1>
+		<Ii num="1">
+			<kls>KlstPlnrKAMMaterialParCat</kls>
+			<srf>phot</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>photonic</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="2">
+			<kls>KlstPlnrKAMMaterialParProp</kls>
+			<srf>n</srf>
+			<avl>catEq(phot)</avl>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>refractive index</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="3">
+			<kls>KlstPlnrKAMMaterialParProp</kls>
+			<srf>n_tbl</srf>
+			<avl>catEq(phot)</avl>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>tabular refractive index f(lam)</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="4">
+			<kls>KlstPlnrKAMMaterialParProp</kls>
+			<srf>no_tbl</srf>
+			<avl>catEq(phot)</avl>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>tabular refractive index f(lam), ord.</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="5">
+			<kls>KlstPlnrKAMMaterialParProp</kls>
+			<srf>ne_tbl</srf>
+			<avl>catEq(phot)</avl>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>tabular refractive index f(lam), extraord.</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="6">
+			<kls>KlstPlnrKAMPersonDetailType</kls>
+			<srf>eml</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>e-mail</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="7">
+			<kls>KlstPlnrKAMPersonDetailType</kls>
+			<srf>fax</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>fax</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="8">
+			<kls>KlstPlnrKAMPersonDetailType</kls>
+			<srf>mbl</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>mobile</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="9">
+			<kls>KlstPlnrKAMPersonDetailType</kls>
+			<srf>tel</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>phone</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="10">
+			<kls>KlstPlnrKMFileContent</kls>
+			<srf>mpamod</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>material property model data</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="11">
+			<kls>KlstPlnrKMFileContent</kls>
+			<srf>mesh</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>mesh information</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="12">
+			<kls>KlstPlnrKMFileContent</kls>
+			<srf>rast</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>rasterizer information</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="13">
+			<kls>KlstPlnrKMFileContent</kls>
+			<srf>dmesh</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>data on mesh</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="14">
+			<kls>KlstPlnrKMFileContent</kls>
+			<srf>drast</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>data on raster</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="15">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>bmp</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>image/bmp</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="16">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>cpp</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>text/x-c</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="17">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>css</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>text/css</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="18">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>csv</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>text/comma-separated-values</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="19">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>doc</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>application/msword</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="20">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>docx</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>application/vnd.openxmlformats-officedocument.wordprocessingml.document</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="21">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>eps</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>application/postscript</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="22">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>gif</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>image/gif</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="23">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>h</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>text/x-h</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="24">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>hdf</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>application/x-hdf</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="25">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>html</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>text/html</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="26">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>jpg</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>image/jpeg</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="27">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>js</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>text/javascript</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="28">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>make</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>text/x-makefile</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="29">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>nc</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>application/x-netcdf</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="30">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>pdf</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>application/pdf</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="31">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>png</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>image/png</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="32">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>ppt</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>application/mspowerpoint</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="33">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>pptx</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>application/vnd.openxmlformats-officedocument.presentationml.presentation</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="34">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>sh</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>application/x-sh</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="35">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>sql</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>text/x-sql</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="36">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>svg</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>image/svg+xml</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="37">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>tex</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>application/x-tex</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="38">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>tgz</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>application/x-gzip</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="39">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>tif</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>image/tiff</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="40">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>txt</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>text/plain</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="41">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>xls</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>application/msexcel</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="42">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>xlsx</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="43">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>xml</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>text/xml</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+		<Ii num="44">
+			<kls>KlstPlnrKMFileMimetype</kls>
+			<srf>zip</srf>
+			<ImeIJAVKeylistKey1>
+				<Ii num="1">
+					<lcl>enus</lcl>
+					<tit>application/zip</tit>
+				</Ii>
+			</ImeIJAVKeylistKey1>
+		</Ii>
+	</ImeIAVKeylistKey1>
+	<ImeIMUsergroup>
+		<Ii num="1">
+			<srf>plnrusers</srf>
+			<ImeIAMUsergroupAccess>
+				<Ii num="1">
+					<crd>CrdPlnrUsg</crd>
+					<uac>edit;exec;view</uac>
+				</Ii>
+				<Ii num="2">
+					<crd>CrdPlnrUsr</crd>
+					<uac>edit;exec;view</uac>
+				</Ii>
+				<Ii num="3">
+					<crd>CrdPlnrPrs</crd>
+					<uac>edit;exec;view</uac>
+				</Ii>
+				<Ii num="4">
+					<crd>CrdPlnrFil</crd>
+					<uac>edit;exec;view</uac>
+				</Ii>
+				<Ii num="5">
+					<crd>CrdPlnrDtp</crd>
+					<uac>edit;exec;view</uac>
+				</Ii>
+				<Ii num="6">
+					<crd>CrdPlnrCtp</crd>
+					<uac>edit;exec;view</uac>
+				</Ii>
+				<Ii num="7">
+					<crd>CrdPlnrMat</crd>
+					<uac>edit;exec;view</uac>
+				</Ii>
+				<Ii num="8">
+					<crd>CrdPlnrPrj</crd>
+					<uac>edit;exec;view</uac>
+				</Ii>
+				<Ii num="9">
+					<crd>CrdPlnrDsn</crd>
+					<uac>edit;exec;view</uac>
+				</Ii>
+				<Ii num="10">
+					<crd>CrdPlnrDom</crd>
+					<uac>edit;exec;view</uac>
+				</Ii>
+				<Ii num="11">
+					<crd>CrdPlnrDgd</crd>
+					<uac>edit;exec;view</uac>
+				</Ii>
+				<Ii num="12">
+					<crd>CrdPlnrDvc</crd>
+					<uac>edit;exec;view</uac>
+				</Ii>
+				<Ii num="13">
+					<crd>CrdPlnrSru</crd>
+					<uac>edit;exec;view</uac>
+				</Ii>
+				<Ii num="14">
+					<crd>CrdPlnrStk</crd>
+					<uac>edit;exec;view</uac>
+				</Ii>
+				<Ii num="15">
+					<crd>CrdPlnrLyr</crd>
+					<uac>edit;exec;view</uac>
+				</Ii>
+				<Ii num="16">
+					<crd>CrdPlnrClc</crd>
+					<uac>edit;exec;view</uac>
+				</Ii>
+				<Ii num="17">
+					<crd>CrdPlnrCli</crd>
+					<uac>edit;exec;view</uac>
+				</Ii>
+				<Ii num="18">
+					<crd>CrdPlnrTpo</crd>
+					<uac>edit;exec;view</uac>
+				</Ii>
+				<Ii num="19">
+					<crd>CrdPlnrArr</crd>
+					<uac>edit;exec;view</uac>
+				</Ii>
+				<Ii num="20">
+					<crd>CrdPlnrAri</crd>
+					<uac>edit;exec;view</uac>
+				</Ii>
+				<Ii num="21">
+					<crd>CrdPlnrRtc</crd>
+					<uac>edit;exec;view</uac>
+				</Ii>
+			</ImeIAMUsergroupAccess>
+			<ImeIMUser>
+				<Ii num="1">
+					<srf>plnruser</srf>
+					<lcl>enus</lcl>
+					<ulv>adm</ulv>
+					<pwd>asdf1234</pwd>
+					<ImeIJMUserState>
+						<Ii num="1">
+							<ste>act</ste>
+						</Ii>
+					</ImeIJMUserState>
+					<ImeIMPerson>
+						<Ii num="1">
+							<sex>f</sex>
+							<tit>Mrs.</tit>
+							<fnm>Emily</fnm>
+							<ImeIJMPersonLastname>
+								<Ii num="1">
+									<lnm>Johnson</lnm>
+								</Ii>
+							</ImeIJMPersonLastname>
+						</Ii>
+					</ImeIMPerson>
+				</Ii>
+			</ImeIMUser>
+		</Ii>
+	</ImeIMUsergroup>
+</IexPlnrIni>
+

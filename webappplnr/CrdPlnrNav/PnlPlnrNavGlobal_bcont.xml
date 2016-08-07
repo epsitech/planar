@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN" "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<head>
+		<title>Global_bcont</title>
+		<script>
+			function handleButDtpExpandClick() {parent.parent.window.handleButExpandClick("LstDtp");};
+			function handleButDtpCollapseClick() {parent.parent.window.handleButCollapseClick("LstDtp");};
+			function handleButDtpViewClick() {parent.parent.window.handleButCrdopenClick("ButDtpView");};
+			function handleButDtpNewcrdClick() {parent.parent.window.handleButCrdopenClick("ButDtpNewcrd");};
+			function handleButCtpExpandClick() {parent.parent.window.handleButExpandClick("LstCtp");};
+			function handleButCtpCollapseClick() {parent.parent.window.handleButCollapseClick("LstCtp");};
+			function handleButCtpViewClick() {parent.parent.window.handleButCrdopenClick("ButCtpView");};
+			function handleButCtpNewcrdClick() {parent.parent.window.handleButCrdopenClick("ButCtpNewcrd");};
+			function handleButMatExpandClick() {parent.parent.window.handleButExpandClick("LstMat");};
+			function handleButMatCollapseClick() {parent.parent.window.handleButCollapseClick("LstMat");};
+			function handleButMatViewClick() {parent.parent.window.handleButCrdopenClick("ButMatView");};
+			function handleButMatNewcrdClick() {parent.parent.window.handleButCrdopenClick("ButMatNewcrd");};
+<!-- IP custScript - INSERT -->
+		</script>
+		<link href="../style/pnlDetail3_2.css" rel="styleSheet" type="text/css"/>
+<!-- IP custStyle - INSERT -->
+	</head>
+	<body marginwidth="0" marginheight="0">
+		<table cellspacing="0" border="0" cellpadding="0"><form action="">
+			<colgroup>
+				<col width="5"/>
+				<col width="215"/>
+				<col width="5"/>
+				<col width="138"/>
+				<col width="2"/>
+				<col width="68"/>
+				<col width="2"/>
+				<col width="138"/>
+				<col width="2"/>
+				<col width="1"/>
+				<col width="114"/>
+			</colgroup>
+			<tbody id="tbl">
+				<tr><td colspan="11" height="5"></td></tr>
+				<tr id="trDtp" class="show">
+					<td height="25"></td>
+					<td id="ldynDtp" align="right">
+					</td>
+					<td></td>
+					<td id="dynDtp" rowspan="1" colspan="5">
+					</td>
+					<td></td>
+					<td id="rdynDtp" colspan="2" align="left">
+					</td>
+				</tr>
+				<tr id="trDtp2" class="hide">
+					<td colspan="3" height="67"></td>
+					<td colspan="3"></td>
+				</tr>
+				<tr id="trCtp" class="show">
+					<td height="25"></td>
+					<td id="ldynCtp" align="right">
+					</td>
+					<td></td>
+					<td id="dynCtp" rowspan="1" colspan="5">
+					</td>
+					<td></td>
+					<td id="rdynCtp" colspan="2" align="left">
+					</td>
+				</tr>
+				<tr id="trCtp2" class="hide">
+					<td colspan="3" height="67"></td>
+					<td colspan="3"></td>
+				</tr>
+				<tr id="trMat" class="show">
+					<td height="25"></td>
+					<td id="ldynMat" align="right">
+					</td>
+					<td></td>
+					<td id="dynMat" rowspan="1" colspan="5">
+					</td>
+					<td></td>
+					<td id="rdynMat" colspan="2" align="left">
+					</td>
+				</tr>
+				<tr id="trMat2" class="hide">
+					<td colspan="3" height="67"></td>
+					<td colspan="3"></td>
+				</tr>
+				<tr><td colspan="11" height="4"></td></tr>
+			</tbody>
+		</form></table>
+	</body>
+</html>
+
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN" "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<head>
+		<title>Calc_bcont</title>
+		<script>
+			function handleButClcExpandClick() {parent.parent.window.handleButExpandClick("LstClc");};
+			function handleButClcCollapseClick() {parent.parent.window.handleButCollapseClick("LstClc");};
+			function handleButClcViewClick() {parent.parent.window.handleButCrdopenClick("ButClcView");};
+			function handleButClcNewcrdClick() {parent.parent.window.handleButCrdopenClick("ButClcNewcrd");};
+			function handleButCliExpandClick() {parent.parent.window.handleButExpandClick("LstCli");};
+			function handleButCliCollapseClick() {parent.parent.window.handleButCollapseClick("LstCli");};
+			function handleButCliViewClick() {parent.parent.window.handleButCrdopenClick("ButCliView");};
+			function handleButCliNewcrdClick() {parent.parent.window.handleButCrdopenClick("ButCliNewcrd");};
+<!-- IP custScript - INSERT -->
+		</script>
+		<link href="../style/pnlDetail3_2.css" rel="styleSheet" type="text/css"/>
+<!-- IP custStyle - INSERT -->
+	</head>
+	<body marginwidth="0" marginheight="0">
+		<table cellspacing="0" border="0" cellpadding="0"><form action="">
+			<colgroup>
+				<col width="5"/>
+				<col width="215"/>
+				<col width="5"/>
+				<col width="138"/>
+				<col width="2"/>
+				<col width="68"/>
+				<col width="2"/>
+				<col width="138"/>
+				<col width="2"/>
+				<col width="1"/>
+				<col width="114"/>
+			</colgroup>
+			<tbody id="tbl">
+				<tr><td colspan="11" height="5"></td></tr>
+				<tr id="trClc" class="show">
+					<td height="25"></td>
+					<td id="ldynClc" align="right">
+					</td>
+					<td></td>
+					<td id="dynClc" rowspan="1" colspan="5">
+					</td>
+					<td></td>
+					<td id="rdynClc" colspan="2" align="left">
+					</td>
+				</tr>
+				<tr id="trClc2" class="hide">
+					<td colspan="3" height="67"></td>
+					<td colspan="3"></td>
+				</tr>
+				<tr id="trCli" class="show">
+					<td height="25"></td>
+					<td id="ldynCli" align="right">
+					</td>
+					<td></td>
+					<td id="dynCli" rowspan="1" colspan="5">
+					</td>
+					<td></td>
+					<td id="rdynCli" colspan="2" align="left">
+					</td>
+				</tr>
+				<tr id="trCli2" class="hide">
+					<td colspan="3" height="67"></td>
+					<td colspan="3"></td>
+				</tr>
+				<tr><td colspan="11" height="4"></td></tr>
+			</tbody>
+		</form></table>
+	</body>
+</html>
+
+
